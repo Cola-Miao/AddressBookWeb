@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示列表</title>
+</head>
+<body>
+<p>姓名    电话号</p>
+{{range $v := .res}}
+    <p>{{$v.Name}}    {{$v.Number}}</p>
+{{end}}<br>
+<a href="/">
+    <button type="button" >返回首页</button></a>
+</body>
+</html>
